@@ -51,8 +51,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-✨Hey {}, I am ✨ {} ~.
-Im an Anime themed + Super Group Management Bot, feel free to add me to your groups!
+💫Hello {}, I am 🇮🇳 {} ~.
+I am an Anime themed and a Super Group Management care taker ,I will take care of your family like my family.👨‍👧‍👧❣Wanna to admit me in your family?
 You can find my list of available commands with /help.
 """
 
@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
+LEGEND_IMG = "https://telegra.ph/file/ad91415b90b88ef3edfa4.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Legend is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -190,14 +190,14 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👸 Invite me in your place ",
+                            text="Welcome me to your family😍🌹",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join for chat ",
-                            url="https://t.me/pro_masti"),
+                            text=" ⚡SOURCE-CODE🤩 ",
+                            url="https://github.com/srinivasop/PIKACHU-OP"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel ",
                              url="https://t.me/pikachubotupdates")        
@@ -208,12 +208,12 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/pikachubotsupport"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/PYTHON_CODER_SRINIVAS")
+                             url="https://t.me/Trust_care_love")
                     
                     ]]))
     else:
         update.effective_message.reply_text(
-            "🔥Hey! PIKACHU IS ONLINE.\n⚙️All systems online and functioning normally!!\n<b>⏱ Alive time:</b> <code>{}</code>\n✨ Thanks for adding me! ✨"
+            "💫Hey! нιмι(🇮🇳)IS ONLINE.\n⚙️All systems online and functioning normally!!\n<b>⏱ Alive time:</b> <code>{}</code>\n✨ Thanks for adding me! ✨"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
